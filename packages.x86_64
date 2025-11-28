@@ -57,6 +57,7 @@ openssh
 picom
 qemu-base
 qpdf
+reflector
 ripgrep
 rsync
 smartmontools
