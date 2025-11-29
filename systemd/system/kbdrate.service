@@ -1,0 +1,12 @@
+[Unit]
+Description=Set keyboard repeat rate for TTY
+After=systemd-vconsole-setup.service
+Before=graphical.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/kbdrate -r 50 -d 250
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
