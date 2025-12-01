@@ -1,0 +1,83 @@
+# Description : CMUS configuration
+# Author      : makmat
+# Date        : 2025-12-02
+# Version     : 1.0
+
+## ==============================
+## Playback & Behaviour
+## ==============================
+
+set continue=true
+set repeat=true
+set shuffle=tracks
+set auto_reshuffle=true
+
+set replaygain=album
+set replaygain_preamp=0
+set softvol=true
+
+set skip_track_info=true
+set follow=true
+set play_library=true
+
+## ==============================
+## Interface
+## ==============================
+
+set show_remaining_time=true
+set show_playback_position=true
+set show_current_bitrate=false
+set show_hidden=false
+
+set mouse=true
+set start_view=sorted
+set status_display_program=
+
+## ==============================
+## Audio Backend (PipeWire/ALSA)
+## ==============================
+
+set output_plugin=alsa
+set dsp.alsa.device=default
+set mixer.alsa.device=default
+set mixer.alsa.channel=Master
+
+## ==============================
+## Library Filters & Tag Rules
+## ==============================
+
+fset 90s=date>=1990&date<2000
+fset classical=genre="Classical"
+fset unheard=play_count=0
+fset missing-tag=!stream&(artist=""|album=""|title=""|tracknumber=-1|date=-1)
+fset mp3=filename="*.mp3"
+fset ogg=filename="*.ogg"
+fset ogg-or-mp3=ogg|mp3
+
+## ==============================
+## Colors
+## ==============================
+
+set color_cmdline_bg=black
+set color_cmdline_fg=white
+set color_error=lightred
+set color_info=lightyellow
+set color_separator=darkgray
+set color_statusline_bg=gray
+set color_statusline_fg=black
+set color_titleline_bg=blue
+set color_titleline_fg=white
+set color_win_bg=black
+set color_win_cur=lightyellow
+set color_win_cur_sel_bg=blue
+set color_win_cur_sel_fg=lightyellow
+set color_win_dir=lightblue
+set color_win_fg=gray
+set color_win_inactive_cur_sel_bg=gray
+set color_win_inactive_cur_sel_fg=lightyellow
+set color_win_inactive_sel_bg=gray
+set color_win_inactive_sel_fg=black
+set color_win_sel_bg=blue
+set color_win_sel_fg=white
+set color_win_title_bg=blue
+set color_win_title_fg=white
