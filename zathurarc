@@ -1,0 +1,70 @@
+# ~/.config/zathura/zathurarc
+# Description : Minimal dark config for zathura (keyboard, performance-oriented)
+# Author      : makmat
+# Date        : 2025-12-02
+# Version     : 1.0
+
+## ==============================
+## General Behavior
+## ==============================
+
+set window-title-basename true
+set statusbar-basename true
+set selection-clipboard clipboard
+set zoom-center true
+set adjust-open width
+set recolor false
+
+## ==============================
+## Rendering
+## ==============================
+
+set render-loading true
+
+## ==============================
+## Color Scheme (Dark)
+## ==============================
+
+# Notifications
+set notification-error-bg       rgba(80,0,0,1)
+set notification-error-fg       rgba(220,220,220,1)
+set notification-warning-bg     rgba(255,184,108,1)
+set notification-warning-fg     rgba(68,71,90,1)
+set notification-bg             rgba(10,10,10,1)
+set notification-fg             rgba(200,200,200,1)
+
+# Completion Menu
+set completion-bg               rgba(10,10,10,1)
+set completion-fg               rgba(140,140,255,1)
+set completion-group-bg         rgba(10,10,10,1)
+set completion-group-fg         rgba(98,114,164,1)
+set completion-highlight-bg     rgba(140,140,255,1)
+set completion-highlight-fg     rgba(10,10,10,1)
+
+# Index View
+set index-bg                    rgba(10,10,10,1)
+set index-fg                    rgba(200,200,200,1)
+set index-active-bg             rgba(68,71,90,1)
+set index-active-fg             rgba(200,200,200,1)
+
+# Bars
+set inputbar-bg                 rgba(10,10,10,1)
+set inputbar-fg                 rgba(200,200,200,1)
+set statusbar-bg                rgba(10,10,10,1)
+set statusbar-fg                rgba(200,200,200,1)
+
+# Document Colors
+set default-bg                  rgba(10,10,10,1)
+set default-fg                  rgba(200,200,200,1)
+
+# Loading Screen
+set render-loading-bg           rgba(200,200,200,1)
+set render-loading-fg           rgba(10,10,10,1)
+
+# Recolor (Optional)
+set recolor-darkcolor           rgba(200,200,200,1)
+set recolor-lightcolor          rgba(10,10,10,1)
+
+# Highlights
+set highlight-color             rgba(120,120,200,0.4)
+set highlight-active-color      rgba(255,121,198,0.5)
