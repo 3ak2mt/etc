@@ -1,0 +1,70 @@
+# ~/.config/dunst/dunstrc
+# Description : Lightweight notification daemon configuration
+# Author      : makmat
+# Date        : 2025-12-02
+# Version     : 1.0
+
+[global]
+
+    ## ==============================
+    ## Positioning
+    ## ==============================
+
+    origin                = top-right
+    offset                = (10,10)
+    width                 = 300
+    gap_size              = 4
+    corner_radius         = 0
+
+    ## ==============================
+    ## Appearance
+    ## ==============================
+
+    font                  = "Fira Code 8"
+    line_height           = 4
+    padding               = 8
+    horizontal_padding    = 8
+    separator_height      = 0
+    frame_color           = "#444444"
+    icon_path             = 
+    hide_duplicate_count  = true
+
+    ## ==============================
+    ## Behavior
+    ## ==============================
+
+    follow                = keyboard
+    notification_limit    = 5
+    indicate_hidden       = false
+    show_indicators       = true
+    sort                  = true
+    stack_duplicates      = true
+    history_length        = 20
+    idle_threshold        = 0
+    enable_posix_regex    = true
+    always_run_script     = true
+
+    ## ==============================
+    ## Integration
+    ## ==============================
+
+    dmenu                 = "/usr/bin/dmenu -p dunst"
+    browser               = "/usr/bin/xdg-open"
+
+[urgency_low]
+    timeout               = 2
+    frame_color           = "#555555"
+    background            = "#1A1A1A"
+    foreground            = "#AAAAAA"
+
+[urgency_normal]
+    timeout               = 5
+    frame_color           = "#333366"
+    background            = "#2F2F4F"
+    foreground            = "#FFFFFF"
+
+[urgency_critical]
+    timeout               = 0
+    frame_color           = "#FF4444"
+    background            = "#8B0000"
+    foreground            = "#FFFFFF"
