@@ -14,12 +14,18 @@ set selection-clipboard clipboard
 set zoom-center true
 set adjust-open width
 set recolor false
+set recolor-keephue false
+set window-title-page true
 
 ## ==============================
 ## Rendering
 ## ==============================
 
 set render-loading true
+set incremental-search true
+set scroll-step 100
+set page-v-padding 0
+set page-h-padding 0
 
 ## ==============================
 ## Color Scheme (Dark)
@@ -66,5 +72,4 @@ set recolor-darkcolor           rgba(200,200,200,1)
 set recolor-lightcolor          rgba(10,10,10,1)
 
 # Highlights
-set highlight-color             rgba(120,120,200,0.4)
-set highlight-active-color      rgba(255,121,198,0.5)
+set highlight-color             rgba(120,
