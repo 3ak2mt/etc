@@ -1,0 +1,77 @@
+# ~/.config/newsboat/urls
+# Description: RSS feed list for Newsboat
+# Author: makmat
+# Date: 2024-12-02
+# Version: 1.0
+
+# ==============================
+# General News
+# ==============================
+
+http://feeds.bbci.co.uk/news/rss.xml                                   "News"         "General"       "BBC"
+https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml              "News"         "General"       "NY Times"
+http://www.aljazeera.com/xml/rss/all.xml                               "News"         "General"       "Al Jazeera"
+https://www.theguardian.com/world/rss                                  "News"         "World"         "The Guardian"
+https://feeds.skynews.com/feeds/rss/world.xml                          "News"         "World"         "Sky News"
+https://feeds.washingtonpost.com/rss/world                             "News"         "World"         "Washington Post"
+https://feeds.bbci.co.uk/news/world/rss.xml                            "News"         "World"         "BBC"
+https://www.cnbc.com/id/100727362/device/rss/rss.html                  "News"         "World"         "CNBC"
+https://feeds.feedburner.com/time/world                                "News"         "World"         "TIME"
+
+# ==============================
+# Technology News
+# ==============================
+
+https://arstechnica.com/feed/                                          "Tech"         "News"          "Ars Technica"
+https://news.ycombinator.com/rss                                       "Tech"         "Community"     "Hacker News"
+https://techcrunch.com/feed/                                           "Tech"         "News"          "TechCrunch"
+https://thenextweb.com/feed/                                           "Tech"         "News"          "TNW"
+https://www.cnet.com/rss/news/                                         "Tech"         "News"          "CNET"
+https://www.theverge.com/rss/index.xml                                 "Tech"         "News"          "The Verge"
+https://feeds.feedburner.com/TheHackersNews?format=xml                 "Tech"         "Security"      "Hacker News"
+
+# ==============================
+# Development & Programming
+# ==============================
+
+http://about.gitlab.com/atom.xml                                       "Development"  "Git"           "GitLab"
+http://cyberciti.biz/feed                                              "Linux"        "Unix"          "Cyberciti"
+http://dev.to/feed                                                     "Development"  "Community"     "DEV"
+http://docker.com/blog/feed                                            "Development"  "Containers"    "Docker"
+http://freecodecamp.org/news/rss                                       "Development"  "Learning"      "FreeCodeCamp"
+http://javascriptweekly.com/rss                                        "Development"  "JavaScript"    "Weekly"
+http://planetpython.org/rss20.xml                                      "Development"  "Python"        "Planet Python"
+http://sitepoint.com/feed                                              "Development"  "Web"           "SitePoint"
+http://smashingmagazine.com/feed                                       "Development"  "Design"        "Smashing Mag"
+http://sqlservercentral.com/blogs/feed                                 "Development"  "SQL"           "SQLServer"
+http://web.dev/feed.xml                                                "Development"  "Web"           "Google Web"
+http://webdesignerdepot.com/feed                                       "Development"  "Design"        "WebDesignerDepot"
+https://blog.angular.io/feed                                           "Development"  "JavaScript"    "Angular"
+https://css-tricks.com/feed/                                           "Development"  "CSS"           "CSS-Tricks"
+https://devblogs.microsoft.com/typescript/feed/                        "Development"  "JavaScript"    "TypeScript"
+https://developers.googleblog.com/feeds/posts/default                  "Development"  "Google"        "Google Dev"
+https://machinelearningmastery.com/blog/feed/                          "Development"  "AI"            "ML Mastery"
+https://reactnative.dev/blog/rss.xml                                   "Development"  "JavaScript"    "React Native"
+https://blog.google/outreach-initiatives/accessibility/rss/            "Development"  "Google"        "Accessibility"
+
+# ==============================
+# Linux & Open Source
+# ==============================
+
+http://archlinux.org/feeds/news                                        "Linux"        "News"          "Arch Linux"
+https://www.omgubuntu.co.uk/feed                                       "Linux"        "Ubuntu"        "OMG! Ubuntu"
+
+# ==============================
+# Security & SEO
+# ==============================
+
+http://grahamcluley.com/feed                                           "Security"     "Blog"          "Graham Cluley"
+http://rss.searchenginejournal.com                                     "SEO"          "Marketing"     "SearchEngineJournal"
+http://ahrefs.com/blog/feed                                            "SEO"          "Marketing"     "Ahrefs"
+http://moz.com/posts/rss/blog                                          "SEO"          "Marketing"     "Moz"
+
+# ==============================
+# Query for Unread Articles
+# ==============================
+
+"query:Unread Articles:unread = \"yes\""

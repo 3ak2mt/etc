@@ -1,0 +1,56 @@
+# ~/.config/newsboat/config
+# Description: Minimal, keyboard-oriented configuration for Newsboat (dark TUI)
+# Author: makmat
+# Date: 2025-12-02
+# Version: 1.0
+
+## ==============================
+## General
+## ==============================
+
+browser "elinks"
+max-items 100
+history-limit 25
+save-path "~/Saved_Articles"
+cache-file "~/.cache/newsboat/newsboat.db"
+scrolloff 5
+
+## ==============================
+## Feed & Article Behavior
+## ==============================
+
+reload-time 60
+show-read-feeds no
+feed-sort-order unreadarticlecount-desc
+article-sort-order date-desc
+
+## ==============================
+## Key Bindings (Vim-style)
+## ==============================
+
+bind-key j down
+bind-key k up
+bind-key h quit
+bind-key l open
+
+## ==============================
+## Theme / Colors
+## ==============================
+
+color background            white   black
+color listnormal            white   black
+color listnormal_unread     white   black
+color listfocus             white   red     bold
+color listfocus_unread      white   red     bold
+color info                  white   blue
+color article               white   black
+
+## ==============================
+## Article Highlighting
+## ==============================
+
+highlight article "^(Feed|Link):.*$"           blue     black   bold
+highlight article "^(Title|Date|Author):.*$"   red      default bold
+highlight article "https?://[^ ]+"             cyan     black   underline
+highlight article "\\[[0-9]+\\]"               green    black   bold
+highlight article "\\[image.+\\]"              magenta  black   bold
